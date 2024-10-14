@@ -23,6 +23,12 @@ namespace MyPortfolio.Controllers
             return View();
         }
 
+        public IActionResult MyPortfolio()
+        {
+            ViewData["Title"] = "My Portfolio";
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
